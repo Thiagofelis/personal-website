@@ -1,0 +1,3 @@
+!cvpath! cv.pdf
+!csspath! style.css
+!photopath! pho.jpeg
