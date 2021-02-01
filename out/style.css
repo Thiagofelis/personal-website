@@ -4,7 +4,8 @@ body {
     background: #F8F8F8;
     overflow: hidden;
     margin: 1em auto;
-    max-width: 80ch;    
+    max-width: 80ch;
+    text-align: justify;    
 }
 
 ul {

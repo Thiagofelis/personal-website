@@ -70,13 +70,13 @@ def createsNavigationBar(i, j, languages, pagename, pagedisplayname, pageinlangu
                                                                                                
             
 
-index_model = open('index_model.html').read()
-model  = open('model.html').read()
+index_model = open('config/index_model.html').read()
+model  = open('config/model.html').read()
 
-pages = readAndCut('pages.txt')
-config = readNoCut('config.txt')
-paths = readAndCut('paths.txt')
-subtitles = readNoCut('subtitles.txt')
+pages = readAndCut('config/pages.txt')
+config = readNoCut('config/config.txt')
+paths = readAndCut('config/paths.txt')
+subtitles = readNoCut('config/subtitles.txt')
 
 # first line of config contains the list of languages
 languages = config[0].split()
@@ -95,11 +95,11 @@ pagedisplayname = [pg[(1 + len(languages)):(1 + 2 * len(languages))] for pg in p
 pagecontents = []
 for name in pagename:
     pagecontents.append(
-        open(name + '.html').read().split('!split!')
+        open('pages/' + name + '.html').read().split('!split!')
     )
 
 # reads homepage contents
-homecontents = open('home.html').read().split('!split!')    
+homecontents = open('pages/home.html').read().split('!split!')    
 
 # creates out directory, a subdirecoty for the flags and subdirectories for the other languages
 if exists('out'):
@@ -108,7 +108,7 @@ mkdir('out')
 mkdir('out/flags')
 
 for pt in paths:
-    copyfile(pt[1], 'out/' + pt[1])
+    copyfile('paths/' + pt[1], 'out/' + pt[1])
 
 for lang in languages:
     copyfile('flags/' + lang + '_off.png', 'out/flags/' + lang + '_off.png')
