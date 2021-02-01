@@ -1,5 +1,0 @@
-# one line per page
-music 1 1 1 Music Musique Música
-education 1 0 1 Education Education Educação
-contact 1 1 1 Contact Contact Contato
-
