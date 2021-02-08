@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Thiago Felicissimo - Projects</title>
+  </head>
+
+<body>
+  <ul type='menu'>
+    <li type='entry'><a href="index.html">Home</a></li>
+<li type='entry'><a href="projects.html"><u>Projects</u></a></li>
+<li type='entry'><a href="music.html">Music</a></li>
+<li type='entry'><a href="contact.html">Contact</a></li>
+<li  class="flag" type='entry'><a href="projects.html"><img src="flags/en_on.png" align=left height=20></a></li>
+<li  class="flag" type='entry'><a href="fr/index.html"><img src="flags/fr_off.png" align=left height=20></a></li>
+<li  class="flag" type='entry'><a href="br/index.html"><img src="flags/br_off.png" align=left height=20></a></li>
+
+  </ul>
+  <hr/>
+
+  <h2>Some past projects</h2>
+
+You can find here some of the projects I have done. These were either done during my free time or for one of my courses.
+
+<table style="width:100%">
+  <tr>
+    <td>
+      <h3>A Natural Deduction to Hilbert System Proof Translator, with Type Inference</h3>
+      <img src="nattohilb.png" style="float:right; margin: 10px;" height=250> <p>This is a translator from the natural deduction proof system to the hilbert proof system, and it concerns the intuitionistic propositional logic. It comes also with a type inference algorithm for proofs of tautologies in the hilbert system (that is, for closed proof terms), which given a proof term returns the most general form of the proposition it proves, if any.</p>
+
+<p>By the Curry-Howard Isomorphism, this is also a translator from the simply typed lambda calculus with sums, products and empty type to the SKI calculus with constructors and eliminators for sum, product and empty type.</p>
+      <p><a href="https://github.com/Thiagofelis/nat-to-hilb">GitHub</a></p>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>
+      <h3>Simple Personal Website Generator</h3>
+      <img src="sitegenerator.png" style="float:left; margin: 10px;" height=220> <p>This is a small website generator I wrote to make it easier for me to manage this website.</p><p>It is not very customizable, as it was made using my own personal template in mind, but it serves well the purpose of being a simple solution to automatize some of the boring and mechanical tasks linked to adding and editing the pages, specially when doing so for a multi-language website.</p> 
+      <p><a href="https://github.com/Thiagofelis/personal-website-generator">GitHub</a></p>
+    </td>
+  </tr>
+    <tr>
+    <td>      
+<h3>Paxos's Synoid in the Akka framework</h3>
+<img src="paxos.jpg" style="float:right; margin: 10px;" height=280>
+<p>The problem of consensus is fundamental in real-world systems, as it is the basis of many distributed systems and blockchain algorithms. The Synoid Algorithm is an obstruction free algorithm that solves consensus on the message passing model. Its main use is implementing state-machine replication through the Paxos algorithm.</p>
+
+<p>The Paxos algorithm was created by Leslie Lamport and it has a very interesting history, which he describes <a href="http://lamport.azurewebsites.net/pubs/pubs.html#lamport-paxos">here</a>. Lamport presented the algorithm throught a fictious story about it being used by the legislative system of the Paxos island in ancient Greece.</p>
+<p>However, because the scientific community didn't understand his sense of humor at that time, the algorithm was ignored and its paper rejected. It took eight years until his paper was finally published, and nowadays Paxos is one of the most know consensus algorithms.</p>
+
+<p>In this project, which I done with João André Pestre for the SLR210 course on blockchains at Télécom Paris, we implement the Synoid Algorithm using the Akka framework in Java. We run some tests, for which we present the results and a discussion of them.</p>
+      <p><a href="https://github.com/Thiagofelis/SLR210-Obstruction-Free-Consensus">GitHub</a></p>
+
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>Correcting byte errors in Quantum-dot Cellular Automata</h3>
+      <img src="qca.jpg" style="float:left; margin: 10px;" height=250>
+      <p>During a part of the years of 2017 and 2018 I had the opportunity to do my first undergraduate research project, at the Computer Engineering Laboratory (LECOM) of the Computer Science Department of the UFMG, under the supervision of professors Luiz Vieira, Marcos Vieira and Omar Neto.</p>
+      <p>I had the chance to be involved in various projects at the laboratory, which gave me an interesting insight in areas of computer science I did not know. I first worked with a project related to IoT, which involved programming with a MSP430 microcontroller.</p>
+      <p>However, the project in which I spent most of my time was related to Quantum-dot Cellular Automata (QCA), a technology currently being developed to replace VLSI circuits by providing much faster clock speeds while consuming much less power. More precisely, my theme focused on the development of a circuit for correcting byte errors in QCA, which I presented in an article published at the Journal Nano Communication Networks.</p>
+            <p><a href="https://www.sciencedirect.com/science/article/pii/S1878778919300146">Paper</a></p>
+	
+
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <h3>Graph algorithms implemented in C</h3>
+      <img src="graph.png" style="float:left; margin: 10px;" height=170>
+      <p>During the courses Algorithms 1 (at UFMG during 2019/1) and MITRO209 (at Télécom Paris during 2019/2 - 2020/1) I had the opportunity to implement various graph algorithms in C. These were</p>
+      <ul>
+	<li>Gale–Shapley algorithm for the stable matching problem (in portuguese): <a href="https://github.com/Thiagofelis/alg1_tp1">GitHub</a></li>
+	<li>Camerini's algorithm for the minimum bottleneck spanning tree problem (in portuguese): <a href="https://github.com/Thiagofelis/TP2_alg1">GitHub</a></li>
+	<li>Algorithms for the minimum vertex cover problem (in portuguese): <a href="https://github.com/Thiagofelis/TP3_alg1">GitHub</a></li>
+	  <li>Algorithms for the densests subgraph problem: <a href="https://github.com/Thiagofelis/mitro209-densest-subgraph">GitHub</a></li>
+</ul>
+
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>Project of an ajdustable voltage source</h3>
+      <img src="tensao.png" style="float:right; margin: 10px;" height=260>
+      <p>Project of an ajdustable voltage source for the course Electronic Circuits Lab 1 (at UFMG during 2018/2).</p>
+      <a href="Report.pdf">Project report</a>
+
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>Project of an audio amplifier</h3>
+      <img src="amp.png" style="float:left; margin: 10px;" height=230>
+      <p>Project of an audio amplifier for the course Electronic Circuits Lab 2 (at UFMG during 2019/1).</p>
+      <a href="relat.pdf">Project report</a>
+    </td>
+  </tr>
+
+  </table>
+   
+
+
+
+</body>
+</html>

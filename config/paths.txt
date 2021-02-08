@@ -1,3 +1,12 @@
 !cvpath! cv.pdf
 !csspath! style.css
 !photopath! pho.jpeg
+!photositegenerator! sitegenerator.png
+!photopaxos! paxos.jpg
+!graph! graph.png
+!tensao! tensao.png
+!ampaudio! amp.png
+!ampaudiorelat! relat.pdf
+!voltagerelat! Report.pdf
+!qca! qca.jpg
+!nattohilb! nattohilb.png

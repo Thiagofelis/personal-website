@@ -17,9 +17,9 @@ from shutil import copyfile, rmtree
 
 
 # models for entries 
-flagentry = "<li class=\"flag\"><a href=!link!><img src=!flagpath! align=left height=20></a></li>"
-normalentry = "<li><a href=!link!>!pagename!</a></li>"
-activeentry = "<li><a href=!link!><u>!pagename!</u></a></li>"
+flagentry = "<li  class=\"flag\" type='entry'><a href=!link!><img src=!flagpath! align=left height=20></a></li>"
+normalentry = "<li type='entry'><a href=!link!>!pagename!</a></li>"
+activeentry = "<li type='entry'><a href=!link!><u>!pagename!</u></a></li>"
 
 def readAndCut(path):
 # reads lines, remove empty liens and lines with coments,

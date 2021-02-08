@@ -1,6 +1,6 @@
 # Simple Personal Website Generator
 
-This is a small website generator I wrote to make it easier for me to manage my personal website. It is not very customizable, as it was made using my own personal template in mind, but it serves well the purpose of beeing a simple solution to automatize some of the boring and mechanical tasks linked to adding and edditing the pages, specially when doing so for a multi-language website.
+This is a small website generator I wrote to make it easier for me to manage my personal website, hosted at [here](https://perso.telecom-paristech.fr/tcesar/). It is not very customizable, as it was made using my own personal template in mind, but it serves well the purpose of beeing a simple solution to automatize some of the boring and mechanical tasks linked to adding and edditing the pages, specially when doing so for a multi-language website.
 
 Some of the features that make it a very useful tool for me are
 

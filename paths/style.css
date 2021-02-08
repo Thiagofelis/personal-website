@@ -2,13 +2,17 @@ body {
     font-family: Helvetica, sans-serif;
     color: #2D2D2D;
     background: #F8F8F8;
-    overflow: hidden;
-    margin: 1em auto;
+    /* centers page */
+    margin: auto;
     max-width: 80ch;
-    text-align: justify;    
+    text-align: justify;
+    /* scrollbar always present, prevents page from unalining when it is added */    
+    overflow-y: scroll;
+    /* prevents mobile version from resizing in weird way the text */
+    -webkit-text-size-adjust: 100%;
 }
 
-ul {
+ul[type='menu'] {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
@@ -16,15 +20,15 @@ ul {
   color: #2D2D2D;
 }
 
-li {
+li[type='entry'] {
   float: left;
 }
-.flag{
+.flag[type='entry']{
     float:right;
     padding: 0px 0px;
 }
 
-li a {
+li[type='entry'] a {
     font-weight: bold;
     display: block;
     color: #2D2D2D;
@@ -34,4 +38,4 @@ li a {
 }
 
 
-
+ul { overflow: hidden; }
